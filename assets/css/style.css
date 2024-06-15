@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Satisfy&display=swap');
+
+img {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.text-xs {
+    font-size: 0.75rem !important;
+    /* 12px */
+    line-height: 1rem !important;
+    /* 16px */
+}
+
+.text-sm {
+    font-size: 0.875rem !important;
+    /* 14px */
+    line-height: 1.25rem !important;
+    /* 20px */
+}
+
+.text-base {
+    font-size: 1rem !important;
+    /* 16px */
+    line-height: 1.5rem !important;
+    /* 24px */
+}
+
+.text-lg {
+    font-size: 1.125rem !important;
+    /* 18px */
+    line-height: 1.75rem !important;
+    /* 28px */
+}
+
+.text-xl {
+    font-size: 1.25rem !important;
+    /* 20px */
+    line-height: 1.75rem !important;
+    /* 28px */
+}
+
+.text-2xl {
+    font-size: 1.5rem !important;
+    /* 24px */
+    line-height: 2rem !important;
+    /* 32px */
+}
+
+.text-3xl {
+    font-size: 1.875rem !important;
+    /* 30px */
+    line-height: 2.25rem !important;
+    /* 36px */
+}
+
+.text-4xl {
+    font-size: 2.25rem !important;
+    /* 36px */
+    line-height: 2.5rem !important;
+    /* 40px */
+}
+
+.text-5xl {
+    font-size: 3rem !important;
+    /* 48px */
+    line-height: 1 !important;
+}
+
+.text-6xl {
+    font-size: 3.75rem !important;
+    /* 60px */
+    line-height: 1 !important;
+}
+
+.text-7xl {
+    font-size: 4.5rem !important;
+    /* 72px */
+    line-height: 1 !important;
+}
+
+.text-8xl {
+    font-size: 6rem !important;
+    /* 96px */
+    line-height: 1 !important;
+}
+
+.text-9xl {
+    font-size: 8rem !important;
+    /* 128px */
+    line-height: 1 !important;
+}
+
+.navbar-brand {
+    font-family: "Satisfy", cursive;
+    color: #fff;
+}
+
+.g-color-1{
+    color: #fff;
+    background: #006241;
+}
+.g-color-2{
+    background: #2e8b57;
+    color: #fff;
+}
+
+.outfit,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#hero {
+    background: rgb(46, 139, 87);
+    background: linear-gradient(42deg, rgba(46, 139, 87, 1) 14%, rgba(0, 98, 65, 1) 92%);
+    padding: 100px 0;
+    text-align: center;
+}
+.meal-header{
+    background: rgb(46, 139, 87);
+    background: linear-gradient(42deg, rgba(46, 139, 87, 1) 14%, rgba(0, 98, 65, 1) 92%);
+    padding: 15px 0;
+    margin-bottom: 50px;
+}
+
+.meal-header h1{
+    color: #fff;
+
+}
+#hero .heading {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+
+}
+
+#hero img {
+    width: 30%;
+}
+
+.hero-bottom span {
+    color: #fff !important;
+    font-size: 50px !important;
+}
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 3s linear infinite both;
+    animation: slide-bottom 3s linear infinite both;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+}
+
+.card-body .card-title{
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+}
+#category .card{
+    background: #edfff5;
+}
+#category .card-img{
+    padding: 15px;
+    background: #fff;
+}
+#category .btn-right{
+    color: #2e8b57!important;
+    background: none!important;
+    border: none!important;
+    font-size: 25px;
+}
+.single-icon{
+    font-size: 100px;
+    color: #2e8b57;
+}
+.single-icon:hover{
+    color: red;
+}
