@@ -96,17 +96,27 @@ img {
     /* 128px */
     line-height: 1 !important;
 }
-
+.heading-1 {
+    font-size: 4.5rem !important;
+    /* 72px */
+    line-height: 1 !important;
+}
+.heading-2 {
+    font-size: 8rem !important;
+    /* 128px */
+    line-height: 1 !important;
+}
 .navbar-brand {
     font-family: "Satisfy", cursive;
     color: #fff;
 }
 
-.g-color-1{
+.g-color-1 {
     color: #fff;
     background: #006241;
 }
-.g-color-2{
+
+.g-color-2 {
     background: #2e8b57;
     color: #fff;
 }
@@ -117,7 +127,12 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span,
+button,
+a,
+div,
+p {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
 }
@@ -128,17 +143,19 @@ h6 {
     padding: 100px 0;
     text-align: center;
 }
-.meal-header{
+
+.meal-header {
     background: rgb(46, 139, 87);
     background: linear-gradient(42deg, rgba(46, 139, 87, 1) 14%, rgba(0, 98, 65, 1) 92%);
     padding: 15px 0;
     margin-bottom: 50px;
 }
 
-.meal-header h1{
+.meal-header h1 {
     color: #fff;
 
 }
+
 #hero .heading {
     text-transform: uppercase;
     color: #fff;
@@ -184,30 +201,98 @@ h6 {
     }
 }
 
-.card-body .card-title{
+.card-body .card-title {
     color: #000;
     text-decoration: none;
     font-weight: 300;
     font-size: 20px;
     text-align: left;
 }
-#category .card{
+
+#category .card {
     background: #edfff5;
 }
-#category .card-img{
+
+#category .card-img {
     padding: 15px;
     background: #fff;
 }
-#category .btn-right{
-    color: #2e8b57!important;
-    background: none!important;
-    border: none!important;
+
+#category .btn-right {
+    color: #2e8b57 !important;
+    background: none !important;
+    border: none !important;
     font-size: 25px;
 }
-.single-icon{
+
+.single-icon {
     font-size: 100px;
     color: #2e8b57;
 }
-.single-icon:hover{
+
+.single-icon:hover {
     color: red;
+}
+.random{
+    background: #eaeaea;
+}
+#mind {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+}
+#mind::before {
+    position: absolute;
+    content: "";
+    width: 12%;
+    height: 60%;
+    right: 0;
+    top: 0;
+    background-image: url(../images/grapes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#mind::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/leaf.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.search-form{
+    width: 25%;
+    height: 45px;
+    padding: 20px;
+    border: 1px solid #2e8b57;
+}
+.search-form:focus{
+    border: 1px solid #2e8b57;
+    box-shadow: none;
+}
+.search-form-btn{
+    padding: 10px 40px 10px 40px;
+    margin-left: 25px;
+    border: 1px solid #2e8b57;
+}
+.search-form-btn:hover{
+    background: #2e8b57;
+    border: 1px solid #2e8b57;
+    color: #fff;
+}
+#country-list a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+}
+footer{
+    padding: 200px 0;
+    width: 100%;
+    background-image: url(../images/kisspng-organic-food-nutrient-dietary-supplement-mineral-v-jungle-border-png-image-5a79ecc23e7805.3013814615179399062559.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

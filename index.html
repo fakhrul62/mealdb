@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fakhrul62.github.io/icons/css/thin.css">
     <link rel="stylesheet" href="https://fakhrul62.github.io/icons/css/solid.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
 <body>
@@ -26,9 +27,9 @@
         <!-- hero -->
         <section id="hero">
             <div class="container">
-                <h1 class="heading text-7xl">Prepare your</h1>
-                <h1 class="heading text-9xl">own meal</h1>
-                <div class="hero-bottom d-flex justify-content-between align-items-end">
+                <h1 class="heading-1 heading">Prepare your</h1>
+                <h1 class="heading-2 heading">own meal</h1>
+                <div class="hero-bottom d-flex justify-content-around align-items-end">
                     <img src="assets/images/pot.png" alt="">
                     <span class="slide-bottom"><i class="fa-thin fa-computer-mouse-scrollwheel"></i></span>
                     <img src="assets/images/veges.png" alt="">
@@ -44,7 +45,52 @@
                 </div>
             </div>
         </section>
+        <!-- Random -->
+        <section class="py-5 random">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+                        <h2 class="fw-bolder pb-5 text-6xl">Wanna eat somethng but can't decide?</h2>
+                    </div>
+                    <div class="col-12 col-xl-2 col-lg-2 col-md-2 col-sm-12 d-flex align-items-center">
+                        <img src="assets/images/question.png" alt="" srcset="">
+                    </div>
+                    <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center">
+                        <div class="text-grp d-flex align-items-center justify-content-center pb-3 ">
+                            <span class="text-2xl me-2">Get a random Meal</span>
+                            <button type="button" onclick="randomMeal()" class="btn btn-success"><i class="fa-solid fa-shuffle"></i></button>
+                        </div>
+                        <div id="random-div" class="w-75 m-auto"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- search -->
+        <section id="mind">
+            <div class="container text-center">
+                <h3 class="text-6xl fw-bolder">Have a Dish on mind?</h3>
+                <h3 class="text-6xl fw-bolder">Search it</h3>
+                <button type="button" onclick="search()" class="btn btn-success mt-5">Go to Search Page <i class="ps-2 fa-light fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+        <!-- Country -->
+        <section id="country" class="my-5 py-5">
+            <div class="container">
+                <h2 class="text-4xl fw-bolder pb-5">Search Meals by Country</h2>
+                <div id="country-list" class="row row-gap-4">
+
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container text-center">
+            <a class="navbar-brand text-7xl text-black" href="index.html">Meal API</a>
+            <p>© 2024 Meal API | Made by Fakhrul</p>
+            <div class="col-lg col-md col-sm col-xl"></div>
+        </div>
+    </footer>
 
 
     <!-- scripts -->
@@ -54,6 +100,7 @@
     <script src="https://fakhrul62.github.io/icons/js/fontawesome.js"></script>
     <script src="https://fakhrul62.github.io/icons/js/thin.js"></script>
     <script src="assets/js/category.js"></script>
+    <script src="assets/js/single.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

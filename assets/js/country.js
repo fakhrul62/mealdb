@@ -1,27 +1,3 @@
-// sort category
-const categoryFunction = async () => {
-    try {
-        // Retrieve the id from the URL query parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get('id');
-
-        if (id) {
-            // Fetch data using the id from the API
-            const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${id}`);
-            const data = await res.json();
-            const element = data.meals;
-            getCategorizedMeals(element);
-            const heading = document.getElementById('cat-name');
-            heading.innerHTML = id;
-            // Further processing of fetched data
-        } else {
-            console.error('No id parameter found in the URL');
-        }
-    } catch (error) {
-        console.error('Error fetching data:', error);
-    }
-}
-//sort country
 const countryFunction = async () => {
     try {
         // Retrieve the id from the URL query parameter
@@ -30,12 +6,11 @@ const countryFunction = async () => {
 
         if (id) {
             // Fetch data using the id from the API
-            const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${id}`);
+            const res = await fetch(`https://themealdb.com/api/json/v1/1/list.php?a=list`);
             const data = await res.json();
             const element = data.meals;
-            getCategorizedMeals(element);
-            const heading = document.getElementById('cat-name');
-            heading.innerHTML = id;
+            console.log(element)
+            getCountryMeals(element);
             // Further processing of fetched data
         } else {
             console.error('No id parameter found in the URL');
@@ -44,9 +19,9 @@ const countryFunction = async () => {
         console.error('Error fetching data:', error);
     }
 }
-///////////////////////====================================
-const getCategorizedMeals = (meals) =>{
-    const getCategorizedContainer = document.getElementById('categorized');
+
+const getCountryMeals = (meals) =>{
+    const getCountryContainer = document.getElementById('country-list');
     meals.forEach(element => {
         const div = document.createElement('div');
         div.classList = `col-3`;
@@ -65,13 +40,9 @@ const getCategorizedMeals = (meals) =>{
                 </div>
             </a>
         `;
-        getCategorizedContainer.appendChild(div);
+        getCountryContainer.appendChild(div);
     });
 }
-const getThatMeal = (data) =>{
-    window.location.href = `../../single.html?id=${data}`;
-}
 
-categoryFunction();
 countryFunction();
 
